@@ -1,13 +1,18 @@
+export type Lang = "en" | "el";
 export type Difficulty = "easy" | "moderate" | "high";
 
 export type Answer = {
   id: string;
-  text: string;
-  points?: number; // optional in data; we'll normalize
+  // Localized text
+  text?: string;          // (legacy single-lang)
+  textByLang?: { en: string; el: string };
+  points?: number;
 };
 
 export type QuestionSet = {
   id?: string;
-  question: string;
-  answers: Answer[]; // ideally 10
+  // Localized question
+  question?: string;      // (legacy single-lang)
+  questionByLang?: { en: string; el: string };
+  answers: Answer[];
 };
