@@ -21,7 +21,10 @@ app.get("/languages", (_req, res) => {
   res.json({ languages: data });
 });
 
-const PORT = Number(process.env.PORT || 4000);
+
+
+const PORT = process.env.PORT || 4000;
+// IMPORTANT: bind to 0.0.0.0, not default localhost
 app.listen(PORT, () => {
   console.log(`Halo Quest API listening on http://localhost:${PORT}`);
 });
