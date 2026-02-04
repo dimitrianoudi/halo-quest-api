@@ -4,9 +4,9 @@ Express API for questions, health, and languages. Deployed on Vercel.
 
 ## Deploy to Vercel
 
-1. **Root Directory (required)**  
-   In the Vercel project: **Settings → General → Root Directory** set to **`api`**.  
-   If this is wrong, you get 404 on every request.
+1. **Root Directory**  
+   - **Repo root** (default): leave empty. `vercel.json` rewrites to `/api/api/app`.
+   - **API only**: set to **`api`** and change the rewrite in `vercel.json` to `"destination": "/api/app"`.
 
 2. Deploy from CLI (from repo root):
    ```bash

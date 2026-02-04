@@ -7,7 +7,8 @@ import app from "../src/server.js";
 
 export default function handler(req: VercelRequest, res: VercelResponse): Promise<void> {
   const url = req.url ?? "/";
-  const path = url.replace(/^\/api\/app/, "") || "/";
+  // Support both Root Directory = "api" (/api/app) and repo root (/api/api/app)
+const path = url.replace(/^\/api\/api\/app/, "").replace(/^\/api\/app/, "") || "/";
   req.url = path;
   return new Promise((resolve, reject) => {
     res.on("finish", () => resolve());
