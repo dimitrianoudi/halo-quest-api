@@ -23,8 +23,13 @@ app.get("/languages", (_req, res) => {
 
 
 
+// Export for Vercel serverless (Express is used as a single function)
+export default app;
+
 const PORT = process.env.PORT || 4000;
-// IMPORTANT: bind to 0.0.0.0, not default localhost
-app.listen(PORT, () => {
-  console.log(`Halo Quest API listening on http://localhost:${PORT}`);
-});
+// Only listen when running locally (not on Vercel)
+if (process.env.VERCEL !== "1") {
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Halo Quest API listening on http://localhost:${PORT}`);
+  });
+}
