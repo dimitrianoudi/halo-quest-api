@@ -9,6 +9,12 @@ const app = express();
 app.use(cors({ origin: process.env.CORS_ORIGIN || "*" }));
 app.use(express.json());
 
+app.get("/", (_req, res) =>
+  res.json({
+    name: "Halo Quest API",
+    endpoints: ["/health", "/questions", "/languages"],
+  })
+);
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.get("/questions", getQuestion); // ?difficulty=easy&seed=1-0&answers=10
 
