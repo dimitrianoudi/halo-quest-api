@@ -1,20 +1,35 @@
 # Halo Quest API
 
-Express API for questions, health, and languages. Deployed on Vercel.
+Express API for questions, health, and languages. Served at **https://haloquest.app/api**.
 
-## Deploy to Vercel
+## Endpoints
 
-1. **Root Directory**  
-   - **Repo root** (default): leave empty. `vercel.json` rewrites to `/api/api/app`.
-   - **API only**: set to **`api`** and change the rewrite in `vercel.json` to `"destination": "/api/app"`.
+- `GET /` — root
+- `GET /health` — health check
+- `GET /questions` — question sets (query: `difficulty`, `answers`, `lang`, `session`, `k`, `exclude`)
+- `GET /languages` — supported languages
 
-2. Deploy from CLI (from repo root):
+## Run locally
+
+```bash
+cd api && pnpm install && pnpm start
+# API at http://localhost:4000
+```
+
+Configure the app with `EXPO_PUBLIC_API_URL` or deploy the API so it is available at `https://haloquest.app/api`.
+
+## Deploying the API (haloquest.app/api)
+
+The API is a **Node.js app**, not static files. Uploading the `dist/` folder to a web root only serves files as text; the API will not run.
+
+1. **Run the API on a Node host** (Railway, Render, Fly.io, or your own server):
    ```bash
-   vercel
+   cd api && pnpm install && pnpm build && pnpm start
    ```
-   Or from this folder:
-   ```bash
-   cd api && vercel
-   ```
+   This runs `node dist/server.js` and listens on `PORT` (default 4000).
 
-3. Endpoints: `/`, `/health`, `/questions`, `/languages`.
+2. **Point haloquest.app/api at that process** using a reverse proxy:
+   - If your main site is on Nginx: proxy `/api` to `http://127.0.0.1:4000` (or the URL of your Node host).
+   - If the API runs on a separate service (e.g. `https://halo-quest-api.up.railway.app`), proxy `https://haloquest.app/api` → that URL.
+
+3. **Set CORS** if the app and API are on different origins: `CORS_ORIGIN=https://haloquest.app` (or `*` for dev).
