@@ -1,5 +1,5 @@
 import type { Difficulty, QuestionSet } from "../types.js";
-import { EXTRA_EASY, EXTRA_MODERATE, EXTRA_HIGH } from "./bank.extra";
+import { EXTRA_EASY, EXTRA_MODERATE, EXTRA_HIGH } from "./bank.extra.js";
 
 const W = [10,9,8,7,6,5,4,3,2,1];
 
