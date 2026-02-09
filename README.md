@@ -1,6 +1,6 @@
 # Halo Quest API
 
-Express API for questions, health, and languages. Served at **https://haloquest.app/api**.
+Express API for questions, health, and languages. Served at **https://api.haloquest.app** (Hetzner VPS).
 
 ## Endpoints
 
@@ -16,20 +16,16 @@ cd api && pnpm install && pnpm start
 # API at http://localhost:4000
 ```
 
-Configure the app with `EXPO_PUBLIC_API_URL` or deploy the API so it is available at `https://haloquest.app/api`.
+For live reload: `pnpm dev` (uses `tsx watch`).
 
-## Deploying the API (haloquest.app/api)
+## Deploy (e.g. Hetzner VPS)
 
-The API is a **Node.js app**, not static files. Uploading the `dist/` folder to a web root only serves files as text; the API will not run.
-
-1. **Run the API on a Node host** (Railway, Render, Fly.io, or your own server):
+1. Build and run the Node app (no Vercel; plain Node):
    ```bash
-   cd api && pnpm install && pnpm build && pnpm start
+   pnpm install && pnpm build && pnpm start
    ```
-   This runs `node dist/server.js` and listens on `PORT` (default 4000).
+   Listens on `PORT` (default 4000). Use a process manager (systemd, pm2) and reverse proxy (Nginx/Caddy) so `https://api.haloquest.app` points to this process.
 
-2. **Point haloquest.app/api at that process** using a reverse proxy:
-   - If your main site is on Nginx: proxy `/api` to `http://127.0.0.1:4000` (or the URL of your Node host).
-   - If the API runs on a separate service (e.g. `https://halo-quest-api.up.railway.app`), proxy `https://haloquest.app/api` → that URL.
+2. Optional env: `CORS_ORIGIN=https://haloquest.app` (or `*` for dev).
 
-3. **Set CORS** if the app and API are on different origins: `CORS_ORIGIN=https://haloquest.app` (or `*` for dev).
+The Expo app uses `EXPO_PUBLIC_API_URL` or falls back to `https://api.haloquest.app`.
