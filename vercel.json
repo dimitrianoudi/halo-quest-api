@@ -1,0 +1,29 @@
+{
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/root"
+    },
+    {
+      "source": "/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/questions",
+      "destination": "/api/questions"
+    },
+    {
+      "source": "/languages",
+      "destination": "/api/languages"
+    },
+    {
+      "source": "/debug/bank",
+      "destination": "/api/debug-bank"
+    }
+  ]
+}
