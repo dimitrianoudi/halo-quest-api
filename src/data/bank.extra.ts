@@ -3,25 +3,7 @@ import type { QuestionSet } from "../types.js";
 const W = [10,9,8,7,6,5,4,3,2,1];
 
 export const EXTRA_EASY: QuestionSet[] = [
-  {
-    id: "two-saints-same-day",
-    questionByLang: {
-      en: "10 feast days with 2 or more saints being honored simultaneously",
-      el: "10 γιορτές αγίων με 2 άγιους και πάνω να τιμούνται ταυτόχρονα",
-    },
-    answers: [
-      { id: "1",  textByLang: { en: "January 30, The Three Hierarchs, Basil the Great, Gregory the Theologian, John Chrysostom", el: "30 Ιανουαρίου, Τριών Ιεραρχών, Μέγας Βασίλειος, Γρηγόριος ο Θεολόγος, Ιωάννης ο Χρυσόστομος" }, points: W[0] },
-      { id: "2",  textByLang: { en: "January 18, Saints Athanasius and Cyril, Patriarchs of Alexandria",                         el: "18 Ιανουαρίου, Αθανασίου και Κυρίλλου, Πατριάρχες Αλεξανδρείας" }, points: W[1] },
-      { id: "3",  textByLang: { en: "May 21, Saints Constantine and Helen, Equals-to-the-Apostles",                              el: "21 Μαΐου, Κωνσταντίνου και Ελένης, οι Ισαπόστολοι" }, points: W[2] },
-      { id: "4",  textByLang: { en: "June 29, Saints Peter and Paul, the foremost Apostles",                                     el: "29 Ιουνίου, Πέτρου και Παύλου, οι κορυφαίοι Απόστολοι" }, points: W[3] },
-      { id: "5",  textByLang: { en: "June 30, Synaxis of the Twelve Holy Apostles",                                              el: "30 Ιουνίου, Σύναξη των Αγίων Δώδεκα Αποστόλων" }, points: W[4] },
-      { id: "6",  textByLang: { en: "November 8, Synaxis of the Archangels Michael and Gabriel",                                 el: "8 Νοεμβρίου, Σύναξη των Αρχαγγέλων Μιχαήλ και Γαβριήλ" }, points: W[5] },
-      { id: "7",  textByLang: { en: "November 1, Saints Cosmas and Damian, the Unmercenary Physicians",                          el: "1 Νοεμβρίου, Κοσμά και Δαμιανού των Αναργύρων" }, points: W[6] },
-      { id: "8",  textByLang: { en: "September 9, Synaxis of the Righteous Ancestors of God Joachim and Anna",                   el: "9 Σεπτεμβρίου, Σύναξη των Θεοπατόρων Ιωακείμ και Άννης" }, points: W[7] },
-      { id: "9",  textByLang: { en: "June 11, Saints Bartholomew and Barnabas, Holy Apostles",                                   el: "11 Ιουνίου, Βαρθολομαίου και Βαρνάβα, Άγιοι Απόστολοι" }, points: W[8] },
-      { id: "10", textByLang: { en: "October 7, Saints Sergius and Bacchus, Holy Martyrs",                                       el: "7 Οκτωβρίου, Σεργίου και Βάκχου, Άγιοι Μάρτυρες" }, points: W[9] },
-    ],
-  },
+
     {
       id: "gr-modern-saints-a",
       questionByLang: {
@@ -41,105 +23,24 @@ export const EXTRA_EASY: QuestionSet[] = [
         { id: "10", textByLang: { en: "Saint Savvas of Kalymnos",               el: "Άγιος Σάββας ο εν Καλύμνω" }, points: W[9] },
       ],
     },
-    
-    {
-      id: "new-martyrs-hellas-a",
-      questionByLang: {
-        en: "Name 10 Greek new martyrs commonly commemorated",
-        el: "Ονομάστε 10 Έλληνες νεομάρτυρες που τιμώνται ευρέως",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "New Martyr Ephraim of Nea Makri", el: "Άγιος Εφραίμ ο Νεομάρτυς Νέας Μάκρης" }, points: W[0] },
-        { id: "2",  textByLang: { en: "New Martyr George of Ioannina",   el: "Άγιος Γεώργιος ο Νεομάρτυς Ιωαννίνων" }, points: W[1] },
-        { id: "3",  textByLang: { en: "New Martyr Constantine of Hydra", el: "Άγιος Κωνσταντίνος ο Υδραίος" }, points: W[2] },
-        { id: "4",  textByLang: { en: "New Martyr Aquilina of Zagliveri",el: "Αγία Ακυλίνα η Ζαγκλιβερινή" }, points: W[3] },
-        { id: "5",  textByLang: { en: "New Martyr Polydoros of Cyprus", el: "Άγιος Πολύδωρος ο Νεομάρτυς (Κύπρος)" }, points: W[4] },
-        { id: "6",  textByLang: { en: "New Martyr Theodore of Mytilene", el: "Άγιος Θεόδωρος ο Νεομάρτυς Μυτιλήνης" }, points: W[5] },
-        { id: "7",  textByLang: { en: "New Martyr Demetrios of Chios",   el: "Άγιος Δημήτριος ο Νεομάρτυς Χίου" }, points: W[6] },
-        { id: "8",  textByLang: { en: "New Martyr Zograf of Kastoria",  el: "Άγιος Ζωγράφος ο Νεομάρτυς Καστοριάς" }, points: W[7] },
-        { id: "9",  textByLang: { en: "New Martyr Nicholas of Karpenisi",el: "Άγιος Νικόλαος ο Νεομάρτυς Καρπενησίου" }, points: W[8] },
-        { id: "10", textByLang: { en: "New Hieromartyr Philoumenos",     el: "Άγιος Ιερομάρτυς Φιλούμενος" }, points: W[9] },
-      ],
-    },
-    /* *Greek world / broader Hellenic sphere included. */
-    
-    {
-      id: "recent-women-saints-el-a",
-      questionByLang: {
-        en: "Name 10 women saints revered in modern Greece",
-        el: "Ονομάστε 10 γυναίκες αγίες που τιμώνται στη σύγχρονη Ελλάδα",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Saint Irene of Lesvos", el: "Αγία Ειρήνη Μυτιλήνης" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Saint Philothei of Athens", el: "Αγία Φιλοθέη Αθηναία" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Saint Sophia of Kleisoura", el: "Οσία Σοφία της Κλεισούρας" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Saint Matrona of Chios",     el: "Αγία Ματρώνα Χίου" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Saint Irene Chrysovalantou", el: "Αγία Ειρήνη Χρυσοβαλάντου" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Saint Paraskevi (Epivates)", el: "Αγία Παρασκευή (Επιβατών)" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Saint Kalliopi (New Martyr)", el: "Αγία Καλλιόπη (Νεομάρτυς)" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Saint Theodora of Vasta",    el: "Αγία Θεοδώρα Βάστας" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Saint Irene of Thessaloniki", el: "Αγία Ειρήνη Θεσσαλονίκης" }, points: W[8] },
-        { id: "10", textByLang: { en: "Saint Kyriaki (New Martyr)",  el: "Αγία Κυριακή (Νεομάρτυς)" }, points: W[9] },
-      ],
-    },
-    
-    {
-      id: "greek-saints-hymnographers-a",
-      questionByLang: {
-        en: "Name 10 hymnwriters",
-        el: "Ονομάστε 10 υμνογράφους",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Saint Romanos the Melodist",      el: "Άγιος Ρωμανός ο Μελωδός" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Saint John of Damascus",          el: "Άγιος Ιωάννης ο Δαμασκηνός" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Saint Andrew of Crete",           el: "Άγιος Ανδρέας Κρήτης" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Saint Cosmas of Maiuma",          el: "Άγιος Κοσμάς ο Μαϊουμά" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Saint Joseph the Hymnographer",   el: "Άγιος Ιωσήφ ο Υμνογράφος" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Saint Theophanes the Branded",    el: "Άγιος Θεοφάνης ο Γραπτός" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Saint Theodore the Studite",      el: "Άγιος Θεόδωρος ο Στουδίτης" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Saint Kassiani the Hymnographer", el: "Οσία Κασσιανή η Υμνογράφος" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Saint Anatolius of Constantinople", el: "Άγιος Ανατόλιος Κωνσταντινουπόλεως" }, points: W[8] },
-        { id: "10", textByLang: { en: "Saint Germanus of Constantinople", el: "Άγιος Γερμανός Κωνσταντινουπόλεως" }, points: W[9] },
-      ],
-    },
 
     {
-      id: "ot-books-a",
+      id: "david-goliath-a",
       questionByLang: {
-        en: "Name 10 books of the Old Testament",
-        el: "Ονομάστε 10 βιβλία της Παλαιάς Διαθήκης",
+        en: "Name 10 people or things from the story of David and Goliath",
+        el: "Ονομάστε 10 πρόσωπα ή πράγματα από την ιστορία του Δαβίδ και του Γολιάθ",
       },
       answers: [
-        { id: "1",  textByLang: { en: "Genesis", el: "Γένεσις" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Exodus", el: "Έξοδος" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Leviticus", el: "Λευιτικό" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Numbers", el: "Αριθμοί" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Deuteronomy", el: "Δευτερονόμιο" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Joshua", el: "Ιησούς του Ναυή" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Judges", el: "Κριτές" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Ruth", el: "Ρουθ" }, points: W[7] },
-        { id: "9",  textByLang: { en: "1 Samuel", el: "Α΄ Σαμουήλ" }, points: W[8] },
-        { id: "10", textByLang: { en: "2 Samuel", el: "Β΄ Σαμουήλ" }, points: W[9] },
-      ],
-    },
-
-    {
-      id: "parables-jesus-a",
-      questionByLang: {
-        en: "Name 10 parables of Jesus",
-        el: "Ονομάστε 10 παραβολές του Ιησού",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Sower", el: "Ο Σπορέας" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Good Samaritan", el: "Ο Καλός Σαμαρείτης" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Prodigal Son", el: "Ο Άσωτος Υιός" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Lost Sheep", el: "Το Απολωλός Πρόβατο" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Mustard Seed", el: "Ο Κόκκος Σινάπεως" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Hidden Treasure", el: "Ο Κρυμμένος Θησαυρός" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Pearl of Great Price", el: "Το Πολύτιμο Μαργαριτάρι" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Talents", el: "Τα Τάλαντα" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Unforgiving Servant", el: "Ο Ανελεήμων Δούλος" }, points: W[8] },
-        { id: "10", textByLang: { en: "Ten Virgins", el: "Οι Δέκα Παρθένες" }, points: W[9] },
+        { id: "1",  textByLang: { en: "David",       el: "Δαβίδ" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Goliath",     el: "Γολιάθ" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Sling",       el: "Σφεντόνα" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Stone",       el: "Πέτρα" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Giant",       el: "Γίγαντας" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Shepherd",    el: "Βοσκός" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Sheep",       el: "Πρόβατα" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Armor",       el: "Πανοπλία" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Sword",       el: "Σπαθί" }, points: W[8] },
+        { id: "10", textByLang: { en: "King Saul",   el: "Βασιλιάς Σαούλ" }, points: W[9] },
       ],
     },
 
@@ -203,43 +104,321 @@ export const EXTRA_EASY: QuestionSet[] = [
       ],
     },
 
+
     {
-      id: "women-nt",
+      id: "holy-week-days-a",
       questionByLang: {
-        en: "Name 10 women from the New Testament",
-        el: "Ονομάστε 10 γυναίκες της Καινής Διαθήκης",
+        en: "Name 10 days or services from Holy Week and Pascha",
+        el: "Ονομάστε 10 ημέρες ή ακολουθίες της Μεγάλης Εβδομάδας και του Πάσχα",
       },
       answers: [
-        { id: "1",  textByLang: { en: "Mary the Theotokos", el: "Μαρία η Θεοτόκος" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Mary Magdalene", el: "Μαρία η Μαγδαληνή" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Elizabeth", el: "Ελισάβετ" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Anna the Prophetess", el: "Άννα η Προφήτις" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Martha", el: "Μάρθα" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Mary of Bethany", el: "Μαρία της Βηθανίας" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Joanna", el: "Ιωάννα" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Susanna", el: "Σουσάννα" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Lydia", el: "Λυδία" }, points: W[8] },
-        { id: "10", textByLang: { en: "Phoebe", el: "Φοίβη" }, points: W[9] },
+        { id: "1",  textByLang: { en: "Lazarus Saturday", el: "Σάββατο του Λαζάρου" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Palm Sunday", el: "Κυριακή των Βαΐων" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Holy Monday", el: "Μεγάλη Δευτέρα" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Holy Tuesday", el: "Μεγάλη Τρίτη" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Holy Wednesday", el: "Μεγάλη Τετάρτη" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Holy Thursday", el: "Μεγάλη Πέμπτη" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Holy Friday", el: "Μεγάλη Παρασκευή" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Holy Saturday", el: "Μεγάλο Σάββατο" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Pascha Matins", el: "Ακολουθία της Αναστάσεως" }, points: W[8] },
+        { id: "10", textByLang: { en: "Agape Vespers", el: "Εσπερινός της Αγάπης" }, points: W[9] },
       ],
     },
 
     {
-      id: "theotokos-titles-a",
+      id: "fruits-spirit",
       questionByLang: {
-        en: "Name 10 titles of the Theotokos",
-        el: "Ονομάστε 10 προσωνύμια της Θεοτόκου",
+        en: "Name 10 Christian virtues",
+        el: "Ονομάστε 10 χριστιανικές αρετές",
       },
       answers: [
-        { id: "1",  textByLang: { en: "Theotokos", el: "Θεοτόκος" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Panagia", el: "Παναγία" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Mother of God", el: "Μητέρα του Θεού" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Ever-Virgin", el: "Αειπάρθενος" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Platytera", el: "Πλατυτέρα" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Hodegetria", el: "Οδηγήτρια" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Eleousa", el: "Ελεούσα" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Gorgoepikoos", el: "Γοργοεπήκοος" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Life-Giving Spring", el: "Ζωοδόχος Πηγή" }, points: W[8] },
-        { id: "10", textByLang: { en: "Myrtidiotissa", el: "Μυρτιδιώτισσα" }, points: W[9] },
+        { id: "1",  textByLang: { en: "Love",        el: "Αγάπη" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Joy",         el: "Χαρά" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Peace",       el: "Ειρήνη" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Patience",    el: "Μακροθυμία" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Kindness",    el: "Χρηστότητα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Goodness",    el: "Αγαθωσύνη" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Faithfulness",el: "Πίστη" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Gentleness",  el: "Πραότητα" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Self-control",el: "Εγκράτεια" }, points: W[8] },
+        { id: "10", textByLang: { en: "Humility",    el: "Ταπείνωση" }, points: W[9] },
+      ],
+    },
+
+    {
+      id: "nt-books-a",
+      questionByLang: {
+        en: "Name 10 books of the New Testament",
+        el: "Ονομάστε 10 βιβλία της Καινής Διαθήκης",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Matthew",        el: "Κατά Ματθαίον" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Mark",           el: "Κατά Μάρκον" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Luke",           el: "Κατά Λουκάν" }, points: W[2] },
+        { id: "4",  textByLang: { en: "John",           el: "Κατά Ιωάννην" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Acts",           el: "Πράξεις των Αποστόλων" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Romans",         el: "Προς Ρωμαίους" }, points: W[5] },
+        { id: "7",  textByLang: { en: "1 Corinthians",  el: "Α΄ Κορινθίους" }, points: W[6] },
+        { id: "8",  textByLang: { en: "2 Corinthians",  el: "Β΄ Κορινθίους" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Galatians",      el: "Προς Γαλάτας" }, points: W[8] },
+        { id: "10", textByLang: { en: "Ephesians",      el: "Προς Εφεσίους" }, points: W[9] },
+      ],
+    },
+    {
+      id: "jesus-life-events-a",
+      questionByLang: {
+        en: "Name 10 key events from the life of Jesus",
+        el: "Ονομάστε 10 βασικά γεγονότα από τη ζωή του Ιησού",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Nativity",                  el: "Γέννηση" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Presentation in the Temple",el: "Υπαπαντή" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Baptism",                   el: "Βάπτιση" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Temptation in the desert",  el: "Πειρασμός στην έρημο" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Calling the disciples",     el: "Κλήση των μαθητών" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Transfiguration",           el: "Μεταμόρφωση" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Entry into Jerusalem",      el: "Είσοδος στα Ιεροσόλυμα" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Crucifixion",               el: "Σταύρωση" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Resurrection",              el: "Ανάσταση" }, points: W[8] },
+        { id: "10", textByLang: { en: "Ascension",                 el: "Ανάληψη" }, points: W[9] },
+      ],
+    },
+    {
+      id: "christian-symbols-a",
+      questionByLang: {
+        en: "Name 10 common Christian symbols",
+        el: "Ονομάστε 10 συνηθισμένα χριστιανικά σύμβολα",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Cross",             el: "Σταυρός" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Fish",              el: "Ιχθύς" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Dove",              el: "Περιστέρι" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Lamb",              el: "Αρνί" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Anchor",            el: "Άγκυρα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Light / Candle",    el: "Φως / Κερί" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Shepherd",          el: "Ποιμένας" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Vine",              el: "Άμπελος" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Bread",             el: "Άρτος" }, points: W[8] },
+        { id: "10", textByLang: { en: "Chalice",           el: "Ποτήριο" }, points: W[9] },
+      ],
+    },
+    {
+      id: "jesus-visited-places-a",
+      questionByLang: {
+        en: "Name 10 places that Jesus visited",
+        el: "Ονομάστε 10 μέρη που επισκέφθηκε ο Ιησούς",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Bethlehem",       el: "Βηθλεέμ" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Nazareth",        el: "Ναζαρέτ" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Jerusalem",       el: "Ιερουσαλήμ" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Bethany",         el: "Βηθανία" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Capernaum",       el: "Καπερναούμ" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Cana",            el: "Κανά" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Jericho",         el: "Ιεριχώ" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Samaria",         el: "Σαμάρεια" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Jordan River",    el: "Ποταμός Ιορδάνης" }, points: W[8] },
+        { id: "10", textByLang: { en: "Sea of Galilee",  el: "Λίμνη της Γαλιλαίας" }, points: W[9] },
+      ],
+    },
+    {
+      id: "jesus-disciples-a",
+      questionByLang: {
+        en: "Name 10 disciples of Jesus",
+        el: "Ονομάστε 10 μαθητές του Ιησού",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Peter",                  el: "Πέτρος" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Andrew",                 el: "Ανδρέας" }, points: W[1] },
+        { id: "3",  textByLang: { en: "James",                  el: "Ιάκωβος" }, points: W[2] },
+        { id: "4",  textByLang: { en: "John",                   el: "Ιωάννης" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Philip",                 el: "Φίλιππος" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Bartholomew",            el: "Βαρθολομαίος" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Thomas",                 el: "Θωμάς" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Matthew",                el: "Ματθαίος" }, points: W[7] },
+        { id: "9",  textByLang: { en: "James son of Alphaeus",  el: "Ιάκωβος του Αλφαίου" }, points: W[8] },
+        { id: "10", textByLang: { en: "Simon the Zealot",       el: "Σίμων ο Ζηλωτής" }, points: W[9] },
+      ],
+    },
+    {
+      id: "christmas-story-a",
+      questionByLang: {
+        en: "Name 10 people or things from the Christmas story",
+        el: "Ονομάστε 10 πρόσωπα ή πράγματα από την ιστορία των Χριστουγέννων",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Jesus",        el: "Ιησούς" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Mary",         el: "Μαρία" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Joseph",       el: "Ιωσήφ" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Angel",        el: "Άγγελος" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Star",         el: "Αστέρι" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Bethlehem",    el: "Βηθλεέμ" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Manger",       el: "Φάτνη" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Shepherds",    el: "Βοσκοί" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Wise Men",     el: "Μάγοι" }, points: W[8] },
+        { id: "10", textByLang: { en: "Gifts",        el: "Δώρα" }, points: W[9] },
+      ],
+    },
+    {
+      id: "creation-story-a",
+      questionByLang: {
+        en: "Name 10 things from the story of Creation",
+        el: "Ονομάστε 10 πράγματα από την ιστορία της Δημιουργίας",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Light",        el: "Φως" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Sky",          el: "Ουρανός" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Sea",          el: "Θάλασσα" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Land",         el: "Γη" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Sun",          el: "Ήλιος" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Moon",         el: "Σελήνη" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Stars",        el: "Αστέρια" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Birds",        el: "Πουλιά" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Fish",         el: "Ψάρια" }, points: W[8] },
+        { id: "10", textByLang: { en: "Humans",       el: "Άνθρωποι" }, points: W[9] },
+      ],
+    },
+    {
+      id: "bible-animals-a",
+      questionByLang: {
+        en: "Name 10 animals mentioned in the Bible",
+        el: "Ονομάστε 10 ζώα που αναφέρονται στο Ευαγγέλιο",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Lion",         el: "Λιοντάρι" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Sheep",        el: "Πρόβατο" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Dove",         el: "Περιστέρι" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Donkey",       el: "Γαϊδούρι" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Fish",         el: "Ψάρι" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Camel",        el: "Καμήλα" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Horse",        el: "Άλογο" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Goat",         el: "Κατσίκα" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Dog",          el: "Σκύλος" }, points: W[8] },
+        { id: "10", textByLang: { en: "Raven",        el: "Κοράκι" }, points: W[9] },
+      ],
+    },
+    {
+      id: "bible-foods-a",
+      questionByLang: {
+        en: "Name 10 foods mentioned in the Bible",
+        el: "Ονομάστε 10 τρόφιμα που αναφέρονται στο Ευαγγέλιο",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Bread",        el: "Ψωμί" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Fish",         el: "Ψάρι" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Grapes",       el: "Σταφύλια" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Figs",         el: "Σύκα" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Olives",       el: "Ελιές" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Honey",        el: "Μέλι" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Wheat",        el: "Σιτάρι" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Lamb",         el: "Αρνί" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Milk",         el: "Γάλα" }, points: W[8] },
+        { id: "10", textByLang: { en: "Wine",         el: "Κρασί" }, points: W[9] },
+      ],
+    },
+    {
+      id: "church-items-a",
+      questionByLang: {
+        en: "Name 10 things found in church",
+        el: "Ονομάστε 10 πράγματα που βρίσκουμε στην εκκλησία",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Cross",        el: "Σταυρός" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Icon",         el: "Εικόνα" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Candle",       el: "Κερί" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Bible",        el: "Βίβλος" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Altar",        el: "Αγία Τράπεζα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Incense",      el: "Λιβάνι" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Censer",       el: "Θυμιατό" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Chalice",      el: "Ποτήριο" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Bell",         el: "Καμπάνα" }, points: W[8] },
+        { id: "10", textByLang: { en: "Oil Lamp",     el: "Καντήλι" }, points: W[9] },
+      ],
+    },
+    {
+      id: "well-known-saints-a",
+      questionByLang: {
+        en: "Name 10 well-known saints",
+        el: "Ονομάστε 10 πολύ γνωστούς αγίους",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Saint George",             el: "Άγιος Γεώργιος" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Saint Nicholas",           el: "Άγιος Νικόλαος" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Saint Demetrios",          el: "Άγιος Δημήτριος" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Saint Basil",              el: "Άγιος Βασίλειος" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Saint John the Baptist",   el: "Άγιος Ιωάννης ο Πρόδρομος" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Saint Catherine",          el: "Αγία Αικατερίνη" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Saint Paraskevi",          el: "Αγία Παρασκευή" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Saint Marina",             el: "Αγία Μαρίνα" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Saint Spyridon",           el: "Άγιος Σπυρίδων" }, points: W[8] },
+        { id: "10", textByLang: { en: "Saint Constantine",        el: "Άγιος Κωνσταντίνος" }, points: W[9] },
+      ],
+    },
+    {
+      id: "bible-men-a",
+      questionByLang: {
+        en: "Name 10 well-known men from the Bible",
+        el: "Ονομάστε 10 γνωστούς άνδρες από το Ευαγγέλιο",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Adam",         el: "Αδάμ" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Noah",         el: "Νώε" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Abraham",      el: "Αβραάμ" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Isaac",        el: "Ισαάκ" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Jacob",        el: "Ιακώβ" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Moses",        el: "Μωυσής" }, points: W[5] },
+        { id: "7",  textByLang: { en: "David",        el: "Δαβίδ" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Solomon",      el: "Σολομών" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Peter",        el: "Πέτρος" }, points: W[8] },
+        { id: "10", textByLang: { en: "Paul",         el: "Παύλος" }, points: W[9] },
+      ],
+    },
+    {
+      id: "noahs-ark-a",
+      questionByLang: {
+        en: "Name 10 things from the story of Noah's Ark",
+        el: "Ονομάστε 10 πράγματα από την ιστορία της Κιβωτού του Νώε",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Noah",                 el: "Νώε" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Ark",                  el: "Κιβωτός" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Rain",                 el: "Βροχή" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Flood",                el: "Κατακλυσμός" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Animals",              el: "Ζώα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Dove",                 el: "Περιστέρι" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Raven",                el: "Κοράκι" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Rainbow",              el: "Ουράνιο τόξο" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Olive branch",         el: "Κλαδί ελιάς" }, points: W[8] },
+        { id: "10", textByLang: { en: "Noah's family",        el: "Οικογένεια του Νώε" }, points: W[9] },
+      ],
+    },
+
+
+
+
+  ];
+  
+  // ---------- MODERATE (3) ----------
+  export const EXTRA_MODERATE: QuestionSet[] = [
+
+
+    {
+      id: "women-martyrs-a",
+      questionByLang: {
+        en: "Name 10 women martyrs",
+        el: "Ονομάστε 10 γυναίκες μάρτυρες",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Saint Catherine", el: "Αγία Αικατερίνη" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Saint Barbara", el: "Αγία Βαρβάρα" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Saint Marina", el: "Αγία Μαρίνα" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Saint Paraskevi", el: "Αγία Παρασκευή" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Saint Kyriaki", el: "Αγία Κυριακή" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Saint Euphemia", el: "Αγία Ευφημία" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Saint Christina", el: "Αγία Χριστίνα" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Saint Irene", el: "Αγία Ειρήνη" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Saint Tatiana", el: "Αγία Τατιανή" }, points: W[8] },
+        { id: "10", textByLang: { en: "Saint Photini", el: "Αγία Φωτεινή" }, points: W[9] },
       ],
     },
 
@@ -264,110 +443,24 @@ export const EXTRA_EASY: QuestionSet[] = [
     },
 
     {
-      id: "women-martyrs-a",
+      id: "theotokos-titles-a",
       questionByLang: {
-        en: "Name 10 women martyrs",
-        el: "Ονομάστε 10 γυναίκες μάρτυρες",
+        en: "Name 10 titles of the Theotokos",
+        el: "Ονομάστε 10 προσωνύμια της Θεοτόκου",
       },
       answers: [
-        { id: "1",  textByLang: { en: "Saint Catherine", el: "Αγία Αικατερίνη" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Saint Barbara", el: "Αγία Βαρβάρα" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Saint Marina", el: "Αγία Μαρίνα" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Saint Paraskevi", el: "Αγία Παρασκευή" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Saint Kyriaki", el: "Αγία Κυριακή" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Saint Euphemia", el: "Αγία Ευφημία" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Saint Christina", el: "Αγία Χριστίνα" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Saint Irene", el: "Αγία Ειρήνη" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Saint Tatiana", el: "Αγία Τατιανή" }, points: W[8] },
-        { id: "10", textByLang: { en: "Saint Photini", el: "Αγία Φωτεινή" }, points: W[9] },
+        { id: "1",  textByLang: { en: "Theotokos", el: "Θεοτόκος" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Panagia", el: "Παναγία" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Mother of God", el: "Μητέρα του Θεού" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Ever-Virgin", el: "Αειπάρθενος" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Platytera", el: "Πλατυτέρα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Hodegetria", el: "Οδηγήτρια" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Eleousa", el: "Ελεούσα" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Gorgoepikoos", el: "Γοργοεπήκοος" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Life-Giving Spring", el: "Ζωοδόχος Πηγή" }, points: W[8] },
+        { id: "10", textByLang: { en: "Myrtidiotissa", el: "Μυρτιδιώτισσα" }, points: W[9] },
       ],
     },
-
-    {
-      id: "holy-week-days-a",
-      questionByLang: {
-        en: "Name 10 days or services from Holy Week and Pascha",
-        el: "Ονομάστε 10 ημέρες ή ακολουθίες της Μεγάλης Εβδομάδας και του Πάσχα",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Lazarus Saturday", el: "Σάββατο του Λαζάρου" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Palm Sunday", el: "Κυριακή των Βαΐων" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Holy Monday", el: "Μεγάλη Δευτέρα" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Holy Tuesday", el: "Μεγάλη Τρίτη" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Holy Wednesday", el: "Μεγάλη Τετάρτη" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Holy Thursday", el: "Μεγάλη Πέμπτη" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Holy Friday", el: "Μεγάλη Παρασκευή" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Holy Saturday", el: "Μεγάλο Σάββατο" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Pascha Matins", el: "Ακολουθία της Αναστάσεως" }, points: W[8] },
-        { id: "10", textByLang: { en: "Agape Vespers", el: "Εσπερινός της Αγάπης" }, points: W[9] },
-      ],
-    },
-
-    {
-      id: "desert-fathers-a",
-      questionByLang: {
-        en: "Name 10 Desert Fathers or Mothers",
-        el: "Ονομάστε 10 Πατέρες ή Μητέρες της ερήμου",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Saint Anthony the Great", el: "Άγιος Αντώνιος ο Μέγας" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Saint Pachomius the Great", el: "Άγιος Παχώμιος ο Μέγας" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Saint Macarius the Great", el: "Άγιος Μακάριος ο Μέγας" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Saint Arsenius the Great", el: "Άγιος Αρσένιος ο Μέγας" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Saint Moses the Ethiopian", el: "Άγιος Μωυσής ο Αιθίοπας" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Saint Poemen the Great", el: "Άγιος Ποιμήν ο Μέγας" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Saint Sisoes the Great", el: "Άγιος Σισώης ο Μέγας" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Saint Syncletica", el: "Οσία Συγκλητική" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Saint Sarah of the Desert", el: "Οσία Σάρρα της ερήμου" }, points: W[8] },
-        { id: "10", textByLang: { en: "Saint John the Dwarf", el: "Άγιος Ιωάννης ο Κολοβός" }, points: W[9] },
-      ],
-    },
-    {
-      id: "psalms-themes",
-      questionByLang: {
-        en: "Name 10 themes from the Psalms",
-        el: "Ονομάστε 10 θέματα από τους Ψαλμούς",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Praise",            el: "Δοξολογία" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Thanksgiving",      el: "Ευχαριστία" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Lament",            el: "Θρήνος" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Trust",             el: "Εμπιστοσύνη" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Wisdom",            el: "Σοφία" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Kingship",          el: "Βασιλεία" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Creation",          el: "Δημιουργία" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Torah/Law",         el: "Νόμος" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Zion/Temple",       el: "Σιών/Ναός" }, points: W[8] },
-        { id: "10", textByLang: { en: "Messianic hope",    el: "Μεσσιανική ελπίδα" }, points: W[9] },
-      ],
-    },
-    {
-      id: "fruits-spirit",
-      questionByLang: {
-        en: "Name 10 Christian virtues (including fruits of the Spirit)",
-        el: "Ονομάστε 10 χριστιανικές αρετές (μαζί με τους καρπούς του Πνεύματος)",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Love",        el: "Αγάπη" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Joy",         el: "Χαρά" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Peace",       el: "Ειρήνη" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Patience",    el: "Μακροθυμία" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Kindness",    el: "Χρηστότητα" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Goodness",    el: "Αγαθωσύνη" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Faithfulness",el: "Πίστη" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Gentleness",  el: "Πραότητα" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Self-control",el: "Εγκράτεια" }, points: W[8] },
-        { id: "10", textByLang: { en: "Humility",    el: "Ταπείνωση" }, points: W[9] },
-      ],
-    },
-
-
-
-  ];
-  
-  // ---------- MODERATE (3) ----------
-  export const EXTRA_MODERATE: QuestionSet[] = [
-  
     {
       id: "acts-mission-places",
       questionByLang: {
@@ -619,25 +712,6 @@ export const EXTRA_EASY: QuestionSet[] = [
       ],
     },
     {
-      id: "psalms-quoted-nt-a",
-      questionByLang: {
-        en: "Name 10 Psalms frequently quoted in the New Testament",
-        el: "Ονομάστε 10 Ψαλμούς που παρατίθενται συχνά στην Καινή Διαθήκη",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Psalm 2",   el: "Ψαλμός 2" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Psalm 8",   el: "Ψαλμός 8" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Psalm 16",  el: "Ψαλμός 16" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Psalm 22",  el: "Ψαλμός 22" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Psalm 40",  el: "Ψαλμός 40" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Psalm 41",  el: "Ψαλμός 41" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Psalm 69",  el: "Ψαλμός 69" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Psalm 95",  el: "Ψαλμός 95" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Psalm 110", el: "Ψαλμός 110" }, points: W[8] },
-        { id: "10", textByLang: { en: "Psalm 118", el: "Ψαλμός 118" }, points: W[9] },
-      ],
-    },
-    {
       id: "tabernacle-items-a",
       questionByLang: {
         en: "Name 10 items related to the Tabernacle/Temple",
@@ -656,25 +730,7 @@ export const EXTRA_EASY: QuestionSet[] = [
         { id: "10", textByLang: { en: "Priestly Garments",      el: "Ιερατικά Ενδύματα" }, points: W[9] },
       ],
     },
-    {
-      id: "judges-ot-a",
-      questionByLang: {
-        en: "Name 10 judges from the Book of Judges",
-        el: "Ονομάστε 10 Κριτές από το βιβλίο των Κριτών",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Othniel",  el: "Οθνιήλ" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Ehud",    el: "Αώδ" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Deborah", el: "Δεββώρα" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Gideon",  el: "Γεδεών" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Tola",    el: "Θωλά" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Jair",    el: "Ιαΐρ" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Jephthah",el: "Ιεφθά" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Ibzan",   el: "Αβσάν" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Elon",    el: "Αιλών" }, points: W[8] },
-        { id: "10", textByLang: { en: "Samson",  el: "Σαμψών" }, points: W[9] },
-      ],
-    },
+
     {
       id: "paul-companions-a",
       questionByLang: {
@@ -694,25 +750,7 @@ export const EXTRA_EASY: QuestionSet[] = [
         { id: "10", textByLang: { en: "Onesimus",     el: "Ονήσιμος" }, points: W[9] },
       ],
     },
-    {
-      id: "elijah-elisha-miracles-a",
-      questionByLang: {
-        en: "Name 10 miracles of Elijah and Elisha",
-        el: "Ονομάστε 10 θαύματα του Ηλία και του Ελισσαίου",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Fire on Mount Carmel (Elijah)", el: "Φωτιά στο Κάρμηλο (Ηλίας)" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Widow’s oil & flour (Elijah)",  el: "Λάδι και αλεύρι της χήρας (Ηλίας)" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Raising widow’s son (Elijah)",  el: "Ανάσταση υιού χήρας (Ηλίας)" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Parting the Jordan (Elijah/Elisha)", el: "Διαχωρισμός Ιορδάνη (Ηλίας/Ελισσαίος)" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Chariot of fire (Elijah taken up)", el: "Άρμα πυρός (Αναλήψη Ηλία)" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Purifying Jericho’s water (Elisha)", el: "Καθαρισμός νερού Ιεριχούς (Ελισσαίος)" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Multiplying oil (Elisha)",       el: "Πολλαπλασιασμός ελαίου (Ελισσαίος)" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Raising Shunammite’s son (Elisha)", el: "Ανάσταση υιού Σωμανίτιδας (Ελισσαίος)" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Healing Naaman (Elisha)",        el: "Ίαση Νεεμάν (Ελισσαίος)" }, points: W[8] },
-        { id: "10", textByLang: { en: "Floating axe head (Elisha)",     el: "Το σιδερένιο τσεκούρι που επέπλευσε (Ελισσαίος)" }, points: W[9] },
-      ],
-    },
+
     {
       id: "virtues-classic-theology",
       questionByLang: {
@@ -732,44 +770,7 @@ export const EXTRA_EASY: QuestionSet[] = [
         { id: "10", textByLang: { en: "Obedience", el: "Υπακοή" }, points: W[9] }
       ]
     },
-    {
-      id: "greek-fathers-titles",
-      questionByLang: {
-        en: "Name 10 titles or epithets of Greek Fathers",
-        el: "Ονομάστε 10 προσωνύμια/τίτλους Ελλήνων Πατέρων"
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "The Theologian (Gregory)", el: "Ο Θεολόγος (Γρηγόριος)" }, points: W[0] },
-        { id: "2",  textByLang: { en: "The Golden-Mouthed (Chrysostom)", el: "Ο Χρυσόστομος" }, points: W[1] },
-        { id: "3",  textByLang: { en: "The Great (Basil)", el: "Ο Μέγας (Βασίλειος)" }, points: W[2] },
-        { id: "4",  textByLang: { en: "The Confessor (Maximus)", el: "Ο Ομολογητής (Μάξιμος)" }, points: W[3] },
-        { id: "5",  textByLang: { en: "The Damascene (John)", el: "Ο Δαμασκηνός (Ιωάννης)" }, points: W[4] },
-        { id: "6",  textByLang: { en: "The Wonderworker (Nicholas)", el: "Ο Θαυματουργός (Νικόλαος)" }, points: W[5] },
-        { id: "7",  textByLang: { en: "The New Theologian (Symeon)", el: "Ο Νέος Θεολόγος (Συμεών)" }, points: W[6] },
-        { id: "8",  textByLang: { en: "The Hymnographer (Romanos)", el: "Ο Υμνογράφος (Ρωμανός)" }, points: W[7] },
-        { id: "9",  textByLang: { en: "The Philosopher (Justinian era)", el: "Ο Φιλόσοφος" }, points: W[8] },
-        { id: "10", textByLang: { en: "The Great Catechist (Cyril)", el: "Ο Μέγας Κατηχητής (Κύριλλος)" }, points: W[9] }
-      ]
-    },
-    {
-      id: "prophets-major-minor",
-      questionByLang: {
-        en: "Name 10 biblical prophets (major/minor)",
-        el: "Ονομάστε 10 βιβλικούς προφήτες (μεγάλους/μικρούς)",
-      },
-      answers: [
-        { id: "1",  textByLang: { en: "Isaiah",     el: "Ησαΐας" }, points: W[0] },
-        { id: "2",  textByLang: { en: "Jeremiah",   el: "Ιερεμίας" }, points: W[1] },
-        { id: "3",  textByLang: { en: "Ezekiel",    el: "Ιεζεκιήλ" }, points: W[2] },
-        { id: "4",  textByLang: { en: "Daniel",     el: "Δανιήλ" }, points: W[3] },
-        { id: "5",  textByLang: { en: "Hosea",      el: "Ωσηέ" }, points: W[4] },
-        { id: "6",  textByLang: { en: "Joel",       el: "Ιωήλ" }, points: W[5] },
-        { id: "7",  textByLang: { en: "Amos",       el: "Αμώς" }, points: W[6] },
-        { id: "8",  textByLang: { en: "Obadiah",    el: "Αβδιού" }, points: W[7] },
-        { id: "9",  textByLang: { en: "Jonah",      el: "Ιωνάς" }, points: W[8] },
-        { id: "10", textByLang: { en: "Micah",      el: "Μιχαίας" }, points: W[9] },
-      ],
-    },
+
     {
       id: "patristic-virtues",
       questionByLang: {
@@ -830,6 +831,26 @@ export const EXTRA_EASY: QuestionSet[] = [
           { id: "9",  textByLang: { en: "Bibliology", el: "Βιβλιολογία" }, points: W[8] },
           { id: "10", textByLang: { en: "Ethics", el: "Ηθική" }, points: W[9] }
         ]
+      },
+
+      {
+        id: "women-nt",
+        questionByLang: {
+          en: "Name 10 women from the New Testament",
+          el: "Ονομάστε 10 γυναίκες της Καινής Διαθήκης",
+        },
+        answers: [
+          { id: "1",  textByLang: { en: "Mary the Theotokos", el: "Μαρία η Θεοτόκος" }, points: W[0] },
+          { id: "2",  textByLang: { en: "Mary Magdalene", el: "Μαρία η Μαγδαληνή" }, points: W[1] },
+          { id: "3",  textByLang: { en: "Elizabeth", el: "Ελισάβετ" }, points: W[2] },
+          { id: "4",  textByLang: { en: "Anna the Prophetess", el: "Άννα η Προφήτις" }, points: W[3] },
+          { id: "5",  textByLang: { en: "Martha", el: "Μάρθα" }, points: W[4] },
+          { id: "6",  textByLang: { en: "Mary of Bethany", el: "Μαρία της Βηθανίας" }, points: W[5] },
+          { id: "7",  textByLang: { en: "Joanna", el: "Ιωάννα" }, points: W[6] },
+          { id: "8",  textByLang: { en: "Susanna", el: "Σουσάννα" }, points: W[7] },
+          { id: "9",  textByLang: { en: "Lydia", el: "Λυδία" }, points: W[8] },
+          { id: "10", textByLang: { en: "Phoebe", el: "Φοίβη" }, points: W[9] },
+        ],
       },
     {
       id: "beatitudes-people",
@@ -1287,5 +1308,107 @@ export const EXTRA_EASY: QuestionSet[] = [
         { id: "10", textByLang: { en: "Dormition",            el: "Κοίμησις" }, points: W[9] },
       ],
     },
+
+    {
+      id: "new-martyrs-hellas-a",
+      questionByLang: {
+        en: "Name 10 Greek new martyrs commonly commemorated",
+        el: "Ονομάστε 10 Έλληνες νεομάρτυρες που τιμώνται ευρέως",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "New Martyr Ephraim of Nea Makri", el: "Άγιος Εφραίμ ο Νεομάρτυς Νέας Μάκρης" }, points: W[0] },
+        { id: "2",  textByLang: { en: "New Martyr George of Ioannina",   el: "Άγιος Γεώργιος ο Νεομάρτυς Ιωαννίνων" }, points: W[1] },
+        { id: "3",  textByLang: { en: "New Martyr Constantine of Hydra", el: "Άγιος Κωνσταντίνος ο Υδραίος" }, points: W[2] },
+        { id: "4",  textByLang: { en: "New Martyr Aquilina of Zagliveri",el: "Αγία Ακυλίνα η Ζαγκλιβερινή" }, points: W[3] },
+        { id: "5",  textByLang: { en: "New Martyr Polydoros of Cyprus", el: "Άγιος Πολύδωρος ο Νεομάρτυς (Κύπρος)" }, points: W[4] },
+        { id: "6",  textByLang: { en: "New Martyr Theodore of Mytilene", el: "Άγιος Θεόδωρος ο Νεομάρτυς Μυτιλήνης" }, points: W[5] },
+        { id: "7",  textByLang: { en: "New Martyr Demetrios of Chios",   el: "Άγιος Δημήτριος ο Νεομάρτυς Χίου" }, points: W[6] },
+        { id: "8",  textByLang: { en: "New Martyr Zograf of Kastoria",  el: "Άγιος Ζωγράφος ο Νεομάρτυς Καστοριάς" }, points: W[7] },
+        { id: "9",  textByLang: { en: "New Martyr Nicholas of Karpenisi",el: "Άγιος Νικόλαος ο Νεομάρτυς Καρπενησίου" }, points: W[8] },
+        { id: "10", textByLang: { en: "New Hieromartyr Philoumenos",     el: "Άγιος Ιερομάρτυς Φιλούμενος" }, points: W[9] },
+      ],
+    },
+    /* *Greek world / broader Hellenic sphere included. */
+    
+    {
+      id: "recent-women-saints-el-a",
+      questionByLang: {
+        en: "Name 10 women saints revered in modern Greece",
+        el: "Ονομάστε 10 γυναίκες αγίες που τιμώνται στη σύγχρονη Ελλάδα",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Saint Irene of Lesvos", el: "Αγία Ειρήνη Μυτιλήνης" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Saint Philothei of Athens", el: "Αγία Φιλοθέη Αθηναία" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Saint Sophia of Kleisoura", el: "Οσία Σοφία της Κλεισούρας" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Saint Matrona of Chios",     el: "Αγία Ματρώνα Χίου" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Saint Irene Chrysovalantou", el: "Αγία Ειρήνη Χρυσοβαλάντου" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Saint Paraskevi (Epivates)", el: "Αγία Παρασκευή (Επιβατών)" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Saint Kalliopi (New Martyr)", el: "Αγία Καλλιόπη (Νεομάρτυς)" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Saint Theodora of Vasta",    el: "Αγία Θεοδώρα Βάστας" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Saint Irene of Thessaloniki", el: "Αγία Ειρήνη Θεσσαλονίκης" }, points: W[8] },
+        { id: "10", textByLang: { en: "Saint Kyriaki (New Martyr)",  el: "Αγία Κυριακή (Νεομάρτυς)" }, points: W[9] },
+      ],
+    },
+    
+    {
+      id: "greek-saints-hymnographers-a",
+      questionByLang: {
+        en: "Name 10 hymnwriters",
+        el: "Ονομάστε 10 υμνογράφους",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Saint Romanos the Melodist",      el: "Άγιος Ρωμανός ο Μελωδός" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Saint John of Damascus",          el: "Άγιος Ιωάννης ο Δαμασκηνός" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Saint Andrew of Crete",           el: "Άγιος Ανδρέας Κρήτης" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Saint Cosmas of Maiuma",          el: "Άγιος Κοσμάς ο Μαϊουμά" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Saint Joseph the Hymnographer",   el: "Άγιος Ιωσήφ ο Υμνογράφος" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Saint Theophanes the Branded",    el: "Άγιος Θεοφάνης ο Γραπτός" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Saint Theodore the Studite",      el: "Άγιος Θεόδωρος ο Στουδίτης" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Saint Kassiani the Hymnographer", el: "Οσία Κασσιανή η Υμνογράφος" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Saint Anatolius of Constantinople", el: "Άγιος Ανατόλιος Κωνσταντινουπόλεως" }, points: W[8] },
+        { id: "10", textByLang: { en: "Saint Germanus of Constantinople", el: "Άγιος Γερμανός Κωνσταντινουπόλεως" }, points: W[9] },
+      ],
+    },
+
+    {
+      id: "ot-books-a",
+      questionByLang: {
+        en: "Name 10 books of the Old Testament",
+        el: "Ονομάστε 10 βιβλία της Παλαιάς Διαθήκης",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Genesis", el: "Γένεσις" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Exodus", el: "Έξοδος" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Leviticus", el: "Λευιτικό" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Numbers", el: "Αριθμοί" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Deuteronomy", el: "Δευτερονόμιο" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Joshua", el: "Ιησούς του Ναυή" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Judges", el: "Κριτές" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Ruth", el: "Ρουθ" }, points: W[7] },
+        { id: "9",  textByLang: { en: "1 Samuel", el: "Α΄ Σαμουήλ" }, points: W[8] },
+        { id: "10", textByLang: { en: "2 Samuel", el: "Β΄ Σαμουήλ" }, points: W[9] },
+      ],
+    },
+
+    {
+      id: "ot-people-a",
+      questionByLang: {
+        en: "Name 10 well-known people from the Old Testament",
+        el: "Ονομάστε 10 γνωστά πρόσωπα της Παλαιάς Διαθήκης",
+      },
+      answers: [
+        { id: "1",  textByLang: { en: "Adam",     el: "Αδάμ" }, points: W[0] },
+        { id: "2",  textByLang: { en: "Eve",      el: "Εύα" }, points: W[1] },
+        { id: "3",  textByLang: { en: "Noah",     el: "Νώε" }, points: W[2] },
+        { id: "4",  textByLang: { en: "Abraham",  el: "Αβραάμ" }, points: W[3] },
+        { id: "5",  textByLang: { en: "Sarah",    el: "Σάρρα" }, points: W[4] },
+        { id: "6",  textByLang: { en: "Isaac",    el: "Ισαάκ" }, points: W[5] },
+        { id: "7",  textByLang: { en: "Jacob",    el: "Ιακώβ" }, points: W[6] },
+        { id: "8",  textByLang: { en: "Joseph",   el: "Ιωσήφ" }, points: W[7] },
+        { id: "9",  textByLang: { en: "Moses",    el: "Μωυσής" }, points: W[8] },
+        { id: "10", textByLang: { en: "David",    el: "Δαβίδ" }, points: W[9] },
+      ],
+    },
+
   ];
   

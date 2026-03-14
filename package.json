@@ -8,7 +8,8 @@
     "build:clean": "pnpm run clean && pnpm run build",
     "dev": "tsx watch src/server.ts",
     "start": "node dist/server.js",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "deploy:questions": "node ./deploy-questions.mjs"
   },
   "dependencies": {
     "cors": "2.8.5",

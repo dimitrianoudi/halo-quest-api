@@ -29,3 +29,44 @@ For live reload: `pnpm dev` (uses `tsx watch`).
 2. Optional env: `CORS_ORIGIN=https://haloquest.app` (or `*` for dev).
 
 The Expo app uses `EXPO_PUBLIC_API_URL` or falls back to `https://api.haloquest.app`.
+
+## Question-only deploy
+
+If you only changed `src/data/bank.extra.ts`, you can deploy just the built question bank file instead of re-copying the whole API.
+
+One-off usage:
+
+```bash
+cd api
+pnpm deploy:questions -- --target root@89.167.2.211
+```
+
+Reusable setup:
+
+```bash
+export HALOQUEST_API_SSH_TARGET=root@89.167.2.211
+cd api
+pnpm deploy:questions
+```
+
+Defaults used by the script:
+
+- Remote app dir: `/var/www/haloquest-api`
+- If the SSH target user is `root`, the deployed bank file is installed as `deploy:deploy`
+- systemd service: `haloquest-api.service`
+- Health check: tries `127.0.0.1:3000`, then `127.0.0.1:4000`, then `https://api.haloquest.app/health`
+
+Optional overrides:
+
+- `HALOQUEST_API_SSH_PORT`
+- `HALOQUEST_API_REMOTE_DIR`
+- `HALOQUEST_API_REMOTE_OWNER`
+- `HALOQUEST_API_SERVICE`
+- `HALOQUEST_API_HEALTH_URL`
+
+Preview the commands without changing anything:
+
+```bash
+cd api
+pnpm deploy:questions -- --target root@89.167.2.211 --dry-run
+```
